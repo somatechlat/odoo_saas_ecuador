@@ -1,10 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <!-- Sequence for Purchase Retention -->
+        <!-- SRI Electronic Invoicing Sequences (Ecuador) -->
+
+        <!-- Sale Invoices (Factura Electrónica Venta) -->
+        <record id="seq_l10n_ec_sale_invoice" model="ir.sequence">
+            <field name="name">SRI Sale Invoice</field>
+            <field name="code">l10n_ec.sale.invoice</field>
+            <field name="prefix">FV-%(year)s-</field>
+            <field name="padding">9</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- Purchase Invoices (Factura Electrónica Compra) -->
+        <record id="seq_l10n_ec_purchase_invoice" model="ir.sequence">
+            <field name="name">SRI Purchase Invoice</field>
+            <field name="code">l10n_ec.purchase.invoice</field>
+            <field name="prefix">FC-%(year)s-</field>
+            <field name="padding">9</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- Credit Notes (Nota de Crédito) -->
+        <record id="seq_l10n_ec_credit_note" model="ir.sequence">
+            <field name="name">SRI Credit Note</field>
+            <field name="code">l10n_ec.credit.note</field>
+            <field name="prefix">NC-%(year)s-</field>
+            <field name="padding">9</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- Debit Notes (Nota de Débito) -->
+        <record id="seq_l10n_ec_debit_note" model="ir.sequence">
+            <field name="name">SRI Debit Note</field>
+            <field name="code">l10n_ec.debit.note</field>
+            <field name="prefix">ND-%(year)s-</field>
+            <field name="padding">9</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- Purchase Retention (Comprobante de Retención) -->
         <record id="seq_l10n_ec_retention" model="ir.sequence">
-            <field name="name">Purchase Retention</field>
+            <field name="name">SRI Purchase Retention</field>
             <field name="code">l10n_ec.retention</field>
+            <field name="prefix">RET-%(year)s-</field>
+            <field name="padding">9</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- Guía de Remisión Electrónica -->
+        <record id="seq_l10n_ec_guia_remision" model="ir.sequence">
+            <field name="name">SRI Guía de Remisión</field>
+            <field name="code">l10n_ec.guia.remision</field>
+            <field name="prefix">GR-%(year)s-</field>
+            <field name="padding">9</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+        <!-- Liquidación de Compra -->
+        <record id="seq_l10n_ec_liq_compra" model="ir.sequence">
+            <field name="name">SRI Liquidación de Compra</field>
+            <field name="code">l10n_ec.liq.compra</field>
+            <field name="prefix">LC-%(year)s-</field>
             <field name="padding">9</field>
             <field name="number_next">1</field>
             <field name="number_increment">1</field>

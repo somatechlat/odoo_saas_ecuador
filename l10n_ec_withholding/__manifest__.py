@@ -31,6 +31,7 @@ Complete withholding management for Ecuador:
         "l10n_ec_base",
         "l10n_ec_edi",
         "account",
+        "mail",
     ],
     "data": [
         "security/ir.model.access.csv",

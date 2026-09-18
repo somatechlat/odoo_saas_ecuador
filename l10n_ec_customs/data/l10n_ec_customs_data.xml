@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Customs parameters (l10n_ec.fodinfa, l10n_ec.customs_iva) are defined
+     in l10n_ec_base/data/l10n_ec_sri_config.xml to avoid duplicate key conflicts. -->
 <odoo noupdate="1">
-    <!-- Default Customs Parameters 2025 -->
-    <record id="l10n_ec_fodinfa_param" model="ir.config_parameter" forcecreate="False">
-        <field name="key">l10n_ec.fodinfa</field>
-        <field name="value">0.005</field>
-    </record>
-    <record id="l10n_ec_customs_iva_param" model="ir.config_parameter" forcecreate="False">
-        <field name="key">l10n_ec.customs_iva</field>
-        <field name="value">0.15</field>
-    </record>
 </odoo>
 

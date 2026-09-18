@@ -34,7 +34,7 @@ Features:
     "author": "Somatech.dev",
     "website": "https://github.com/somatechlat/odoo_saas_ecuador",
     "license": "LGPL-3",
-    "depends": ["account"],
+    "depends": ["account", "mail"],
     "data": [
         "security/ir.model.access.csv",
         "data/asset_category_data.xml",

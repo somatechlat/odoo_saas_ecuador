@@ -94,24 +94,17 @@ class L10nEcPayslip(models.Model):
             )
 
     def _compute_overtime_from_attendance(self):
-        """
-        PacERP Killer: Auto-calculate overtime from Biometric/Kiosk data.
-        Logic:
-        1. Fetch Attendance records within Payslip Period.
-        2. Sum hours worked.
-        3. Compare vs Contract Hours (e.g. 160h).
-        4. Split Excess:
-           - Weekdays > 8h -> 50% (Supplementary)
-           - Weekends -> 100% (Extraordinary)
-        """
         for rec in self:
-            attendances = self.env["hr.attendance"].search(
-                [
-                    ("employee_id", "=", rec.employee_id.id),
-                    ("check_in", ">=", rec.date_start),
-                    ("check_out", "<=", rec.date_end),
-                ]
-            )
+            try:
+                attendances = self.env["hr.attendance"].search(
+                    [
+                        ("employee_id", "=", rec.employee_id.id),
+                        ("check_in", ">=", rec.date_start),
+                        ("check_out", "<=", rec.date_end),
+                    ]
+                )
+            except (KeyError, Exception):
+                continue
 
             total_supp_50 = 0.0
             total_extra_100 = 0.0

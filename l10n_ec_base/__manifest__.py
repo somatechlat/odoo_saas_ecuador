@@ -29,6 +29,8 @@ This module provides the base localization for Ecuador:
     "depends": [
         "base",
         "account",
+        "purchase",
+        "stock",
         "l10n_latam_invoice_document",
     ],
     "data": [

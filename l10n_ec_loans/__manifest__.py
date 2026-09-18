@@ -13,7 +13,7 @@ Ecuador Loans
 3. **Payslip Integration**: Automatically deducts due installments from the employee's payslip.
     """,
     "author": "Somatech.dev",
-    "depends": ["l10n_ec_hr_payroll"],
+    "depends": ["l10n_ec_hr_payroll", "mail"],
     "data": [
         "security/ir.model.access.csv",
         "views/loan_views.xml",

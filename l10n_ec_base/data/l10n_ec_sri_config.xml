@@ -9,7 +9,7 @@
     Resolución: NAC-DGERCGC25-00000017
 -->
 <odoo>
-    <data noupdate="0">
+    <data noupdate="1">
 
         <!-- ================================================================
              SRI 2026 REGULATORY PARAMETERS

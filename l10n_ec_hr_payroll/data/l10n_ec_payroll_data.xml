@@ -13,32 +13,13 @@
 <odoo>
     <data noupdate="0">
 
-        <!-- ================================================================
-             SALARIO BÁSICO UNIFICADO (SBU) 2026
-             Fuente: Ministerio de Trabajo MDT-2025-227
-        ================================================================= -->
-
-        <record id="l10n_ec_sbu_2026" model="ir.config_parameter">
-            <field name="key">l10n_ec.sbu</field>
-            <field name="value">482.00</field>
-        </record>
+        <!-- SBU and IESS private sector rates are defined in l10n_ec_base/data/l10n_ec_sri_config.xml
+             to avoid duplicate ir.config_parameter keys across modules. -->
 
         <!-- ================================================================
-             IESS CONTRIBUTION RATES 2026
+             IESS CONTRIBUTION RATES 2026 (Extended - not in l10n_ec_base)
              Fuente: IESS Resolución CD 655 / iess.gob.ec
         ================================================================= -->
-
-        <!-- Aporte Personal (Empleado) - Sector Privado: 9.45% -->
-        <record id="l10n_ec_iess_personal" model="ir.config_parameter">
-            <field name="key">l10n_ec.iess_aporte_personal</field>
-            <field name="value">9.45</field>
-        </record>
-
-        <!-- Aporte Patronal (Empleador) - Sector Privado: 11.15% -->
-        <record id="l10n_ec_iess_patronal" model="ir.config_parameter">
-            <field name="key">l10n_ec.iess_aporte_patronal</field>
-            <field name="value">11.15</field>
-        </record>
 
         <!-- Sector Público - Personal: 11.45% -->
         <record id="l10n_ec_iess_personal_publico" model="ir.config_parameter">

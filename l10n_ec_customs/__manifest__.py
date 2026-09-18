@@ -30,7 +30,7 @@ Complete customs management for Ecuador (SENAE):
     "author": "Somatech.dev, Odoo Community Association (OCA)",
     "website": "https://github.com/somatechlat/odoo_saas_ecuador",
     "license": "LGPL-3",
-    "depends": ["stock", "account", "purchase"],
+    "depends": ["stock", "account", "purchase", "mail"],
     "data": [
         "security/ir.model.access.csv",
         "data/l10n_ec_customs_data.xml",
